@@ -12,24 +12,7 @@
 <link rel="stylesheet" media="print" type="text/css" href="./images/print.css" />
 <link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" />
 <title>[##_title_##] :: [##_page_title_##]</title>
-<!--<link rel="stylesheet" type="text/css" href="./images/shCore.css" />
-<link rel="stylesheet" type="text/css" href="./images/shCoreDefault.css" />
-<link rel="stylesheet" type="text/css" href="./images/shThemeDefault.css" />
-<script type="text/javascript" src="./images/shCore.js"></script>
-<script type="text/javascript" src="./images/shAutoloader.js"></script>
-<script type="text/javascript" src="./images/shBrushAS3.js"></script>
-<script type="text/javascript" src="./images/shBrushCpp.js"></script>
-<script type="text/javascript" src="./images/shBrushJScript.js"></script>
-<script type="text/javascript" src="./images/shLegacy.js"></script>
-<script type="text/javascript">
-    SyntaxHighlighter.all();
-</script>
-<style type='text/css'>
-.syntaxhighlighter table tbody
-{
- font-size: 11pt !important;
-}
-</style>-->
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -44,47 +27,10 @@
   })();
 
 </script>
-	
-<script type="text/javascript"> 
-/* function onKeyDown() {
-var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
-if (event.ctrlKey && pressedKey == "c") {
-event.returnValue =  false;
-window.clipboardData.setData('Text', '');
-return true;
-}
-}  */
-</script>  
 
-<!-- 1차에서 2차 시작 -->
-<script type="text/javascript">
-var url1 ='tibyte.tistory.com';
-var url2 ='www.tibyte.kr';
-var url3 ='tibyte.kr';
-
-//if(document.URL.match(url1)) document.location.href = document.URL.replace(url1, url2);
-//if(document.URL.indexOf(url3)==7) document.location.href = document.URL.replace(url3, url2);
-
-function genComplete(msg) {
-alert("글주소가 클립보드에 복사되었습니다.. ("+msg+")");
-}
-
-</script>
-<!-- 1차에서 2차 끝 -->
-	
 </head>
 
-
-
-<body> 
-
-
-
-
-
-
-
-
+<body>
 
 <s_t3>
 <div id="container">
@@ -93,8 +39,8 @@ alert("글주소가 클립보드에 복사되었습니다.. ("+msg+")");
 		<h1><a href="[##_blog_link_##]">[##_title_##]</a></h1>
 	</div>
 	<!-- /blog_title -->
-	
-	
+
+
 	<div id="blog_menu">
 		<div class="menu">
 			<ul>
@@ -105,19 +51,19 @@ alert("글주소가 클립보드에 복사되었습니다.. ("+msg+")");
 			<li class="tab_guestbook"><a href="[##_guestbook_link_##]">|방명록|</a></li>
                                                               <li class="tab_profile"><a href="http://www.tibyte.kr/19">|연락처|</a></li>
 
-                                                              
+
 			</ul>
-		</div>	
+		</div>
 		<div class="search">
 			<s_search>
 				<input type="text" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }"/>
 				<input value="검색" type="submit" onclick="[##_search_onclick_submit_##]" class="submit"/>
 			</s_search>
-		</div>		
+		</div>
 	</div>
 	<!-- /blog_menu -->
-	
-	
+
+
 	<div id="body_wrap">
 	<div id="wrap_temp">
 		<div id="content">
@@ -163,7 +109,7 @@ alert("글주소가 클립보드에 복사되었습니다.. ("+msg+")");
 					<s_local_info_rep>
 						<div class="info" style="margin-left: [##_local_info_depth_##]px">
 							<a href="[##_local_info_link_##]">[##_local_info_title_##]</a>
-						</div> 
+						</div>
 					</s_local_info_rep>
 				</div>
 			</s_local>
@@ -181,14 +127,14 @@ alert("글주소가 클립보드에 복사되었습니다.. ("+msg+")");
 				</div>
 			</s_tag>
 
-			<s_guest>  
+			<s_guest>
 			<div id="content_part_wrap" class="guestbook">
 					<h3>방명록</h3>
 <script type="text/javascript">
-var location_href = document.location.href; 
+var location_href = document.location.href;
 document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+location_href+'"><font size=2 color=#3333cc><u><b>▷티스토리 아이디로 로그인하기</b></u>   (로그인이 풀렸을 때는 여기를 누르세요)  </font></a>');
-</script>  
-	
+</script>
+
 					<s_guest_input_form>
 						<div class="guestWrite">
 							<s_guest_member>
@@ -227,11 +173,11 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 													<span class="name">[##_guest_rep_name_##]</span>
 													<span class="date"> [##_guest_rep_date_##]</span>
 												</div>
-												<div class="control"> 
+												<div class="control">
 													<a href="#" onclick="[##_guest_rep_onclick_delete_##]" class="modify">&nbsp;<span>수정/삭제</span></a>
 													<a href="#" onclick="[##_guest_rep_onclick_reply_##]" class="write">&nbsp;<span>댓글쓰기</span></a>
 												</div>
-											</div> 	
+											</div>
 											<p>[##_guest_rep_desc_##]</p>
 										</div>
 										<s_guest_reply_container>
@@ -241,7 +187,7 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 														<div class="[##_guest_rep_class_##]">
 															<span class="name">[##_guest_rep_name_##]</span>
 															<span class="date"> [##_guest_rep_date_##]</span>
-															<span class="control"> 
+															<span class="control">
 																<a href="#" onclick="[##_guest_rep_onclick_delete_##]" class="modify">&nbsp;<span>수정/삭제</span></a>
 															</span>
 															<p>[##_guest_rep_desc_##]</p>
@@ -263,13 +209,13 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 					<div class="titleWrap">
 						<h2><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h2>
 						<span class="category">공지사항 </span><span  class="date">[##_notice_rep_date_##]</span>
-					</div>	
+					</div>
 					<div class="article">
 						[##_notice_rep_desc_##]
 					</div>
 				</div>
 			</s_notice_rep>
-			
+
 			<s_article_protected>
 				<div class="entryProtected">
 					<div class="titleWrap">
@@ -292,7 +238,7 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 						<h2><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
 						<span class="category"><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a> </span>
 						<span class="date">[##_article_rep_date_##]</span>
-			 </div><!-- titleWrap close -->						
+			 </div><!-- titleWrap close -->
 					<s_ad_div>
 						<div class="blog_admin">
 							<a href="[##_s_ad_m_link_##]">수정</a> :
@@ -305,7 +251,7 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 
 
 		   <div class="article">
-			
+
 
 <div align="right" style="padding: 0 5px 0 0 ">
 글주소: <a href= "http://tibyte.kr[##_article_rep_link_##]" >http://tibyte.kr[##_article_rep_link_##]</a>
@@ -326,11 +272,11 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 
 
 <br>
-				 
+
 				 					<div class="author">
 
 						<span class="text"><u><a href="http://tibyte.kr[##_article_rep_category_link_##]"><font size="2" color ="#0000ff">[##_article_rep_category_##]게시판의 글 전체보기</font></a></u>
-							<br>Posted by </span>[##_article_rep_author_##] 
+							<br>Posted by </span>[##_article_rep_author_##]
 					</div>
 <div id="articleAd">
 
@@ -355,16 +301,13 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 </script>
 
 </div>
-	
+
 <br>
-
-
-
 
 					</div>
 
 
-					
+
 					<s_tag_label>
 						<div class="tagTrail">
 							<span class="tagText">TAG </span> [##_tag_label_rep_##]
@@ -375,7 +318,7 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 							<a href="#tb" onclick="[##_article_rep_tb_link_##]"><s_tb_count>트랙백 <span class="cnt">[##_article_rep_tb_cnt_##]</span>개</s_tb_count></a>
 							<a href="#rp" onclick="[##_article_rep_rp_link_##]"><s_rp_count>댓글 <span class="cnt">[##_article_rep_rp_cnt_##]</span>개</s_rp_count></a>
 					</div>
-					
+
 					<s_tb>
 						<div class="trackback">
 							<h3>트랙백 주소 :: [##_tb_address_##]</h3>
@@ -396,15 +339,11 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 					</s_tb>
 
 
-			<s_rp> 
+			<s_rp>
 						<div class="comment">
 
-						
 
-	
-
-
-							<br><div class="commentList">
+					<br><div class="commentList">
 								<s_rp_container>
 									<ol>
 										<s_rp_rep>
@@ -417,7 +356,7 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 														</div>
 														<div class="control">
 															<a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">&nbsp;<span>수정/삭제</span></a><a href="#" onclick="[##_rp_rep_onclick_reply_##]" class="write">&nbsp;<span>댓글쓰기</span></a><a href="[##_rp_rep_link_##]" class="address">&nbsp;<span>댓글주소</span></a>												</div>
-													</div>		
+													</div>
 													<p>[##_rp_rep_desc_##]</p>
 												</div>
 												<s_rp2_container>
@@ -429,11 +368,11 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 																		<div class="commentInfo">
 																			<span class="name">[##_rp_rep_name_##]</span>
 																			<span class="date"> [##_rp_rep_date_##]</span>
-																		</div>	
-																		<div class="control">
-																			<a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">&nbsp;<span>수정/삭제</span></a><a href="[##_rp_rep_link_##]" class="address">&nbsp;<span>댓글주소</span></a>																	
 																		</div>
-																	</div>																	
+																		<div class="control">
+																			<a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">&nbsp;<span>수정/삭제</span></a><a href="[##_rp_rep_link_##]" class="address">&nbsp;<span>댓글주소</span></a>
+																		</div>
+																	</div>
 																	<p>[##_rp_rep_desc_##]</p>
 																</div>
 															</li>
@@ -447,13 +386,13 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 							</div><!-- commentList close -->
 
 
-        <h3>댓글을 다는 공간입니다.   <b>(로그인하지 않아도  댓글을 남길 수 있습니다.)  
+        <h3>댓글을 다는 공간입니다.   <b>(로그인하지 않아도  댓글을 남길 수 있습니다.)
     </b>              </h3>
   <script type="text/javascript">
-var location_href = document.location.href; 
+var location_href = document.location.href;
 document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+location_href+'"><font color="#3333cc"><u><b>▷티스토리 아이디로 로그인하기</b></u>   (로그인이 풀렸을 때는 여기를 누르세요)</font></a>');
-</script>                                                                                                
- <s_rp_input_form> 
+</script>
+ <s_rp_input_form>
 								<div class="commentWrite">
 									<s_rp_member>
 										<s_rp_guest>
@@ -484,7 +423,7 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 									</p>
 								</div><!-- commentWrite close -->
 							</s_rp_input_form>
-  
+
 						</div><!-- comment close -->
 					</s_rp>
 				</div><!-- entry close -->
@@ -510,15 +449,15 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 <!-- ********************************************************* -->
 		</div>
 		<!-- /content -->
-		
-		
-		
+
+
+
 
 		<div id="wrap_sidebar1">
-			
+
 			<div class="sidebar" id="side_group4">
 				<s_sidebar>
-					
+
 					<!-- 기본 사이드바 -->
 					<s_sidebar_element>
 						<!-- 블로그 이미지 모듈 -->
@@ -526,12 +465,12 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 							<img src="[##_image_##]" alt="블로그 이미지" />
 						</div>
 					</s_sidebar_element>
-					
+
 					<s_sidebar_element>
 						<!-- 블로그 설명 모듈 -->
-						<div class="blogDesc">[##_desc_##] <!--<span class="userID">[##_blogger_##]</span>--></div> 
+						<div class="blogDesc">[##_desc_##] <!--<span class="userID">[##_blogger_##]</span>--></div>
 					</s_sidebar_element>
-									
+
 					<s_sidebar_element>
 					<!-- 관리자 모듈 -->
 						<!--<div class="adminMenu">
@@ -540,7 +479,7 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 
 						</div>-->
 					</s_sidebar_element>
-					
+
 					<s_sidebar_element>
 					<!-- 공지사항 모듈 -->
 						<s_rct_notice>
@@ -553,23 +492,23 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 							</div>
 						</s_rct_notice>
 					</s_sidebar_element>
-				 
+
 				</s_sidebar>
 			</div> <!-- /sidebar /side_group4 -->
-			
-			
+
+
 			<div class="sidebar" id="side_group2">
-				<s_sidebar>	
+				<s_sidebar>
 					<s_sidebar_element>
 					<!-- 카테고리 모듈 -->
 						<div class="category">
 
 							[##_category_##]
-                                                         <script type="text/javascript">try{expandTree();}catch(e){}</script> 
+                                                         <script type="text/javascript">try{expandTree();}catch(e){}</script>
 
 						</div>
 					</s_sidebar_element>
-					
+
 					<s_sidebar_element>
 					<!-- 태그목록 모듈 -->
 						<div class="tagbox">
@@ -581,7 +520,7 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 							</ul>
 						</div>
 					</s_sidebar_element>
-	
+
 					<s_sidebar_element>
 					<!-- 최근 포스트 모듈 -->
 						<div class="recentPost">
@@ -596,7 +535,7 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 							</ul>
 						</div>
 					</s_sidebar_element>
-	
+
 					<s_sidebar_element>
 					<!-- 최근 댓글 모듈 -->
 						<div class="recentComment">
@@ -608,13 +547,13 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 										<div class="info">
 											<span class="name">[##_rctrp_rep_name_##]</span>
 											<span class="date">[##_rctrp_rep_time_##]</span>
-										</div>	
+										</div>
 									</li>
 								</s_rctrp_rep>
 							</ul>
 						</div>
 					</s_sidebar_element>
-	
+
 					<s_sidebar_element>
 					<!-- 최근 트랙백 모듈 -->
 						<div class="recentTrackback">
@@ -626,13 +565,13 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 										<div class="info">
 											<span class="name">[##_rcttb_rep_name_##]</span>
 											<span class="date">[##_rcttb_rep_time_##]</span>
-										</div>	
+										</div>
 									</li>
 								</s_rcttb_rep>
 							</ul>
 						</div>
 					</s_sidebar_element>
-	
+
 					<s_sidebar_element>
 					<!-- 최근 보관함 모듈 -->
 						<div class="archive">
@@ -647,7 +586,7 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 							</ul>
 						</div>
 					</s_sidebar_element>
-					
+
 
 
 
@@ -662,17 +601,17 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 																			<li><a href="http://posnopi13.tistory.com">posnopi</a></li>
 																			<li><a href="http://codeonwort.tistory.com">codeonwort</a></li>
 																			 <li><a href="http://sunyzero.tistory.com">sunyzero</a></li>
-															
-																			
+
+
 																			 </ul>
-							 
-																				
-																		
+
+
+
 					</div>
-                                                                              
+
 					</s_sidebar_element>
-			
-									
+
+
 					<s_sidebar_element>
 					<!-- RSS 링크 -->
 						<div class="botton2">
@@ -680,8 +619,8 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 							<img src="./images/rss_btn.png"  alt="rss" span style="position:relative; top:3px;"/> <font color="#ff8c00"><b>rss </b></font></a>
 						</div>
 					</s_sidebar_element>
-		
-	
+
+
 					<s_sidebar_element>
 					<!-- 카운터 모듈 -->
 						<div class="counter">
@@ -692,17 +631,17 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 							</dl>
 						</div>
 					</s_sidebar_element>                                                               
-					
+
 				</s_sidebar>
 
 
-			</div><!-- /sidebar /side_group2 -->	
+			</div><!-- /sidebar /side_group2 -->
 		</div><!-- /wrap_sidebar1 -->
 		<hr />
 		</div><!-- /wrap_temp-->
-			
-			
-			
+
+
+
 		<div id="wrap_sidebar2">
 			<div class="sidebar" id="side_group3">
 				<s_sidebar>
@@ -740,9 +679,9 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 
 					<s_sidebar_element>
 					<!-- 이웃 위젯 모듈 -->
-                                            <div class="nei2">	
+                                            <div class="nei2">
               					<script src="http://blog.naver.com/connect/WidgetRender.nhn?blogId=tibyte&widgetSeq=273067&authCode=8e4ba1c298f87981f2fef88c7f07c2288a66035"></script>
-                   
+
 </div>
 					</s_sidebar_element>
 
@@ -750,7 +689,7 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
 
 					<s_sidebar_element>
 					<!-- 사이드 광고 모듈 -->
-                                            <div class="nei">	
+                                            <div class="nei">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- sidebar_skyscr -->
 <ins class="adsbygoogle"
@@ -759,53 +698,38 @@ document.write('<a href="https://www.tistory.com/auth/login?redirectUrl='+locati
      data-ad-slot="8245792179"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
-</script>                                     
+</script>
 </div>
 					</s_sidebar_element>
 
-	
+
 				</s_sidebar>
 			</div><!--/sidebar /side_group3 -->
-			<hr /> 
-		</div><!-- /wrap_sidebar2 --> 
-	</div><!-- /body_wrap -->	
+			<hr />
+		</div><!-- /wrap_sidebar2 -->
+	</div><!-- /body_wrap -->
 	<div id="footer">
 		<div class="menu">
 			<a href="[##_localog_link_##]">지역로그</a> :
 			<a href="[##_taglog_link_##]">태그</a> :
-			<a href="[##_blog_link_##]media">미디어로그</a> : 
+			<a href="[##_blog_link_##]media">미디어로그</a> :
 			<a href="[##_guestbook_link_##]">방명록</a> :
-			<a href="[##_owner_url_##]">관리자</a> : 
+			<a href="[##_owner_url_##]">관리자</a> :
 			<a href="[##_owner_url_##]/entry/post">글쓰기</a>
 		</div>
 		<div class="copyright">
 			<a href="[##_blog_link_##]"> [##_blogger_##]</a>'s Blog is powered by <a href="http://daum.net" onclick="window.open(this.href); return false">Daum</a> / Designed by <a href="http://www.tistory.com">Tistory</a>
 		</div>
 	</div><!-- /footer -->
-				
+
 </div><!-- /container -->
-	
+
 <script type="text/javascript" >
 document.onkeydown=null;
 </script>
 </s_t3>
-<!-- 
-<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"></script>
-<script type="text/javascript">
-if(!wcs_add) var wcs_add = {};
-wcs_add["wa"] = "e3de959fc5d210";
-wcs_do();
-</script>
--->
-</body>
-<!--
-daum webinside  <script type="text/javascript"  charset="euc-kr" src="http://log.inside.daum.net/dwi_log/js/dwi.js"></script>
-<script type="text/javascript" >
-	_dwiPID="d-Qe3-233";
-	if(typeof(_dwiCatch) == "function") { _dwiCatch();}
-</script> 
--->
 
+</body>
 
 
 </html>
