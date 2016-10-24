@@ -1,0 +1,476 @@
+@font-face {
+font-family:'Noto Sans KR';
+src: url('./images/NotoSansKR-Regular.woff');
+}
+
+/*
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+*/
+
+@charset "utf-8";
+/* 반드시 들어가야 하는 스타일 시작 */
+
+/* 본문 공통 */
+body{
+		font:12px/1.6  Noto Sans KR, Dotum, Verdana, AppleGothic, Sans-serif;
+		/*@background-image-position=background-position:;*/background-position: left top;/*@*/
+		background-image:/*@background-image=url(images/bg.gif)*/url("images/12.gif")/*@*/;
+		background-repeat:/*@background-image-repeat=no-repeat=no-repeat*/repeat/*@*/;
+		/*@background-color=background-color:#d0d9d2;*/background-color: #C4C3C9;/*@*/
+		color:#666;
+}
+
+a:link          { color:#000;     text-decoration:none;}
+a:visited      { color:#244;     text-decoration:none;}
+a:hover        { color:#228;  	  text-decoration:underline;}
+a:active       { color:#626;     text-decoration:none;}
+
+.tedi a:link          { color:#3311B0;     text-decoration:none;}
+.tedi a:visited      { color:#3311B0;     text-decoration:none;}
+.tedi a:hover        { color:#A01150;  	  text-decoration:underline;}
+.tedi a:active       { color:#3311B0;     text-decoration:none;}
+
+
+hr              { display:none;}
+img             { border:0;}
+h1, h2, h3, h4, ul, ol, dl  { margin:0;  padding:0;}
+h1              { font-size:1.4em;} /* 블로그 타이틀 */
+h2              { font-size:1.3em;} /* 글 제목 */
+h3              { font-size:1.2em;} /* 기타 헤드 타이틀 */
+h4              { font-size:1.0em;}
+input           { border:1px solid #aaa;}
+textarea        { border:1px solid #aaa; font-family:inherit;}
+
+
+
+/* 페이징 - 현재 페이지 */
+    .selected               { font-weight:bold;  color:#f30;}
+    .no-more-prev,
+	.no-more-next { color:#999;}
+
+
+/* 카테고리 - 이미지 버튼 */
+    .ib                     { padding-top:5px; cursor:pointer;}
+/* 카테고리 - 트리 셀 */
+    .branch3                { cursor:pointer;}
+/* 카테고리 - 카테고리 옆 개수 스타일 */
+    .c_cnt                  { font:0.75em Tahoma, Helvetica, Arial, Dotum, sans-serif;  color:#396f95;}
+
+/* 달력 월 표시 */
+    .cal_month              { font:0.95em Verdana, Helvetica, Arial, Dotum, sans-serif;  height:18px; font-weight:bold;}
+/* 달력 요일 표시(th 영역) */
+    .cal_week1              { font:0.95em Dotum, Arial, sans-serif;  height:18px;  font-weight:normal;}
+/* 달력 일요일 표시(th 영역) */
+    .cal_week2              { font:0.95em Dotum, Arial, sans-serif;  color:#f30; }
+
+/* 달력 Week(tr 영역)  */
+    .cal_week               { }
+    .cal_current_week       { }
+
+/* 달력 Day(td 영역) */
+    .cal_day                { font:0.95em Verdana, Helvetica, Arial, Dotum, sans-serif;  color:#999;  text-align:center;}
+/* 달력 Day, 일요일 (td 영역)  */
+    .cal_day_sunday         { color:#f30 !important;}
+    .cal_day_sunday a        { color:#f30 !important;}
+
+/* 달력 지난 달 날짜 표시(td)   */
+    .cal_day1               { color:#ccc;}
+/* 달력 다음 달 날짜 표시(td)   */
+    .cal_day2               { color:#ccc;}
+/* 달력 이번 달 날짜 표시(td) */
+    .cal_day3               { color:#666;}
+/* 달력 오늘 날짜 표시(td) */
+    .cal_day4               { color:#000;  text-decoration:underline;}
+/* 달력 글쓴 날 링크 스타일 */
+    a.cal_click:link        { color:#333;  font-weight:bold;}
+    a.cal_click:visited     { color:#333;  font-weight:bold;}
+    a.cal_click:hover       { color:#f30;  font-weight:bold;}
+
+/* 종류별 코멘트 [##_rp_rep_class_##] */
+    .rp_general             { }
+    .rp_admin               { background:url(images/iconAdmin.gif) no-repeat 0 5px;  padding-left:20px; }
+    .rp_secret              { color:#f30;   font-weight:bold;}
+/* 종류별 코멘트 [##_guest_rep_class_##] */
+    .guest_general          { }
+    .guest_admin            { background:url(images/iconAdmin.gif) no-repeat 0 5px; padding-left:20px;}
+/* 비밀 댓글 (로그아웃시 비밀글 표현)    */
+    .hiddenComment { background:url(images/iconSecret.gif) no-repeat;  padding-left:20px;  font-weight:normal;}
+
+/* 이미지 아래 캡션 스타일 */
+    .cap1                   { color:#999;  text-align:center;}
+/* 그림 */
+    .imageblock             { border:1px solid #ddd;  padding:5px;  margin:5px 0;}
+/* 왼쪽 */
+    .left                   { }
+/* 가운데 */
+    .center                 { }
+/* 오른쪽 */
+    .right                  { }
+/* 그림 2개 배치 */
+    .dual                   { background-color:#fff; margin-bottom:5px;}
+/* 그림 3개 배치 */
+    .triple                 { background-color:#fff; margin-bottom:5px;}
+
+/* 본문 - more / less */
+    .moreless_fold          { background:url(images/iconMore.gif) top left no-repeat;  padding-left:20px; color:#000;}
+    .moreless_top           { background:url(images/iconLess.gif) top left no-repeat;  padding-left:20px; color:#000;}
+    .moreless_body          { }
+    .moreless_bottom        { background:url(images/iconLess.gif) top right no-repeat;  padding-right:20px; color:#999; text-align:right;}
+
+/* 키워드 */ 
+    .key1 { cursor: pointer; border-bottom: 1px dotted #ccc; }
+
+
+/* 반드시 들어가야하는 스타일 끝 - 이 아래는 자유롭게 추가, 삭제 가능 */
+
+
+
+/* 블로그 레이아웃 전체너비*/
+#container {
+		width:/*@post-width:370=*/805px/*@*/;
+		margin:0 auto; 
+}
+
+#blog_title {
+		height:/*@title-height=*/130px/*@*/;
+		padding-left:100px; padding-top:5px;
+		/*@title-background-image=background-image:;*/background-image: none;/*@*/
+		/*@title-background-image-position=background-position:;*/background-position: left top;/*@*/
+		/*@title-background-image-repeat=background-repeat:;*/background-repeat: repeat;/*@*/
+		/*@title-background-color=background-color:;*/background-color: transparent;/*@*/
+}
+#blog_menu    {
+		width:/*@post-width:200=*/818px/*@*/;
+		height:44px;
+		background-image:url(images/bg_menu4.gif);
+		/*background-repeat:no-repeat;*/
+}
+#body_wrap { margin-top:10px;}
+
+#wrap_temp {
+		float:left;
+		width:/*@post-width:200=*/818px/*@*/;
+		}
+#content {
+		float:right;
+		width:/*@post-width=*/648px/*@*/;
+      
+		overflow:hidden;
+		background-color:#fff;
+		padding-bottom:30px;
+}
+
+#wrap_sidebar1 {
+		float:left;
+		width:160px;
+		margin-left:0px;
+		overflow:hidden;
+		
+}
+	#side_group1 { padding:10px; background-color:#fff; margin-bottom:6px; }
+	#side_group2   { }
+	
+#wrap_sidebar2 {
+		float:left;
+		width:0px;
+		display:none;
+		overflow:hidden;		
+		
+}
+
+#footer {
+		clear:both; 
+
+}
+
+/* ***** blog_title : 블로그 타이틀 ***** */
+#blog_title h1             { float: left; padding: 3em 0 0.3em 0em;}
+#blog_title h1 a           { color:/*@title-color=*/#ddddff/*@*/; font-family:/*@title-font-family=*/inherit/*@*/; /*@title-font-size=font-size:;*/font-size: 19px;/*@*/  font-weight:bold;  letter-spacing:-1px;}
+#blog_title h1 a:hover     { color:#999;  text-decoration:none;}
+
+/* ***** blog_title : 블로그 메뉴 ***** */
+#blog_menu .menu      { float:left; padding:15px 0 0 10px; font-size:1.0em; font-weight:bold;}
+#blog_menu .menu a    { margin:0 5px; color:#ccc;}
+#blog_menu .menu a:hover { color:#fff; text-decoration:none;}
+#blog_menu .menu ul   { list-style:none;}
+#blog_menu .menu li   { display:inline; background:url(images/bullBar.gif) no-repeat;  margin-left:3px;  padding-left:7px;}
+#blog_menu .menu li.tab_home { background:none;}
+
+#blog_menu .search               { text-align:right; padding:12px 10px 0 0 ;}
+#blog_menu .search input         { width:130px;  height:16px; background-color:#caddf9; border:1px solid #333; color:#000;}
+#blog_menu .search .submit       { width:39px;  height:20px; background:url(images/btn_search2.gif) no-repeat; text-indent:-5000px; border:0;}
+
+#text_0 {font-size:1.1em; font-weight:bold; padding-bottom:3px;}
+#articleAd {text-align:center;}
+
+/* ***** content common ***** */
+#content .searchList, 
+#content .searchRplist,
+#content .localog, 
+#content .taglog, 
+#content .guestbook, 
+#content .entryNotice, 
+#content .entryProtected, 
+#content .entry             { font-size:1.20em; padding:10px;}
+
+#content_part_wrap_list h3,
+#content_part_wrap_rplist h3,
+#content_part_wrap h3       { border-bottom:1px solid #bbb;  margin-bottom:10px;  color:#222;}
+#content h2 a     { color:/*@post-title-color=*/#2222CC/*@*/; /*@post-title-font-family=font-family:;*/font-family: inherit;/*@*/ /*@post-title-font-size=font-size:;*/font-size: inherit;/*@*/}
+
+.cnt                        { font:0.75em Verdana;  color:#396f95;}
+.date                       { font:0.95em Verdana;  margin-right:10px; }
+.name                       { font-size:0.95em;    color:#999;}
+
+
+
+/* 검색 결과 리스트 */
+.searchList ol, 
+.searchRplist ol            { list-style:none;  padding:5px;}
+.searchList li, 
+.searchRplist li            { border-bottom:1px solid #ccc;  padding-bottom:2px;  margin-bottom:4px;}
+
+
+/* 지역 리스트 */
+.localog .spot              { background:url(images/iconIndentArrow_local.gif) 5px 0 no-repeat;  padding-left:20px;  margin-top:5px;}
+.localog .info              { background:url(images/iconIndentArrow_localinfo.gif) 5px 3px no-repeat;  padding-left:15px;  margin-top:2px;}
+.localog a:link             { color:#f00;}
+.localog a:visited          { color:#f00;}
+.localog a:hover            { color:#f60;  text-decoration:underline;}
+
+/* 태그 클라우드 */
+.taglog ul                  { text-align:justify;}
+.taglog li                  { display:inline; font-size:1.5em;}
+.taglog a:hover             { background-color:#666;  color:#fff !important; text-decoration:none;}
+.taglog li a.cloud1          { color:#396f95;  font-weight:bold;}
+.taglog li a.cloud2          { color:#70a2db;  font-weight:bold;}
+.taglog li a.cloud3          { color:#333;  font-weight:bold;}
+.taglog li a.cloud4          { color:#666; }
+.taglog li a.cloud5          { color:#999; }
+
+/* 방명록 */
+.guestbook p                { padding:2px 0; margin:0;}
+.guestWrite                 { padding:10px;  background-color:#ccc; border:1px solid #bbb;}
+.guestWrite input           { width:150px;}
+.guestWrite textarea        { width:500px;  padding:3px; overflow:auto;}
+.guestWrite .homepage       { width:300px;}
+.guestWrite .submit         { width:507px;  height:22px; background-color:#999;  font-size:1.1em; padding:0px; color:#fff;}
+
+
+.guestList                          {  margin-bottom:4px;  width:520px;  overflow:hidden;} 
+.guestList p                        { font-size:1em; color:#333;  margin:0; padding:5px 0 0 0; color:#111;}
+.guestList h3            { font-size:1em; color:#333;  border:1px solid #bbb; background-color:#ccc;  padding:10px;}
+.guestList ol,
+.guestList ul                       { list-style:none;}
+.guestList .date                    { font:0.9em Verdana, Helvetica, Arial, Dotum, sans-serif;  color:#666;}
+.guestList .name                    { font-size:1em; color:#000; font-weight:bold;}
+.guestList ol li                    { padding:10px 5px;}
+.guestList li ul li                 { padding:5px 0 5px 35px;  background:url("images/iconIndentArrow_local.gif") no-repeat 22px 10px;}
+
+.guestList .commentInfoWrap         { padding:5px 5px 10px 0; border-bottom:1px dashed #999; height:10px;}
+*html .guestList .commentInfoWrap{ padding:5px 5px 5px 0;}
+
+.guestList .commentInfo             { float:left; }
+.guestList .control                 { text-align:right;}
+
+
+.guestList .control a.modify        { background:url(images/iconModify.gif) no-repeat;  padding-left:68px;  padding-bottom:2px;  text-decoration:none;}
+.guestList .control a.modify span   { display:none;}
+.guestList .control a.write         { background:url(images/iconWrite.gif) no-repeat;  padding-left:48px;  padding-bottom:2px;  text-decoration:none;}
+.guestList .control a.write span    { display:none;}
+
+
+
+/* entry common */
+.titleWrap               { border-bottom:1px dashed #ccc;  padding-bottom:5px;  margin-bottom:10px;}
+.titleWrap .category a   { font-size:1.1em;  color:#000000;  margin-right:6px;}
+.titleWrap .date         { font:0.9em Verdana, Helvetica, Arial, Dotum, sans-serif;  color:#888;}
+
+/* entryNotice : 공지사항 */
+.entryNotice h2 { background:url(images/ico_notice.gif) no-repeat 0 4px; padding-left : 60px;}
+
+/* entryProtected : 보호글*/
+.entryProtected h2  { background:url(images/ico_protected.gif) no-repeat 0 4px; padding-left:82px;}
+.entryProtected input    { width:200px;}
+.entryProtected .submit  { width:50px; padding-top:2px; height:20px; background-color:#ccc;}
+
+/* entry : 글*/
+.entry                   { margin-bottom:30px;}
+.blog_admin              { font-size:0.95em; text-align:right;}
+
+.article                 { margin:5px 5px 0 5px; overflow:hidden; color:/*@post-body-color=#555*/#000000/*@*/; /*@post-body-font-family=font-family:;*/font-family: inherit;/*@*/ /*@post-body-font-size=font-size:;*/font-size: inherit;/*@*/ line-height:205%;}
+.article a:link          {color:#0000FF; border-bottom: 1px dashed;}
+.article a:visited       {color:#990099; border-bottom: 1px dashed;}
+.article a:hover         { color:#666;  text-decoration:underline;}
+.article a:active        { color:#222;  text-decoration:none;}
+
+.article li              { margin-left:25px;}
+.article dt              { text-decoration:underline;}
+.article dd              { margin-left:20px;  padding-bottom:10px;}
+.article blockquote      { background:url(images/iconBlockquote.gif) top left no-repeat;  padding-left:25px;  margin:10px 20px;}
+
+.author                  { text-align:right; color:#888; padding:20px 20px; color:#333;}
+.author .text            { font:90% Verdana, Arial, Helvetica, sans-serif;}
+
+
+.tagTrail                { padding:5px 5px 5px 40px;  background:url(images/entryTag.gif) center left no-repeat; clear:both;}
+.tagText                 { display:none;}
+
+.actionTrail             { border-top:2px dotted #888;  padding:7px 5px 7px 5px;  clear:both; font-weight : bold; margin-top:12px;}
+.actionTrail a           { margin-right:10px; color:#333;}
+.actionTrail .cnt        { font:1em verdana; color:#396f95; font-weight : bold;}
+
+.trackback               { margin-bottom:4px;  width:540px;  overflow:hidden;}
+.trackback a             { color:#000;}
+.trackback h3            { font:1em Verdana; color:#333;  border:1px solid #bbb; background-color:#ccc;  padding:10px;}
+.trackback h4            { font:1em Verdana; font-weight:normal;  margin:0;}
+.trackback .name         { font-size:1em; color:#666;}
+.trackback ol            { list-style:none;}
+.trackback li            { border-top:1px dotted #ccc;  padding:5px;}
+.trackback .date         { font:0.9em Verdana, Helvetica, Arial, Dotum, sans-serif;  color:#777;}
+.trackback p             { font:1em Dotum, Arial, sans-serif;  color:#888;  margin:3px 0 0 0; padding:0;}
+
+.trackback a.delete      { background:url(images/iconDelete.gif) left top no-repeat;  padding-left:8px;  text-decoration:none;}
+.trackback a.delete span { display:none;}
+
+
+.comment                          {  margin-bottom:4px;  width:618px;  overflow:hidden;} 
+.comment p                        {  font-size:1em; color:#222;  margin:0; padding:5px 0 0 0; color:#333;}
+.comment h3                       { font-size:1em; color:#222;  border:1px solid #bbb; background-color:#ccc;  padding:10px;}
+.comment ol,
+.comment ul                       {  list-style:none;}
+.comment .date                    { font-size:0.9em;  color:#555;}
+.comment .name                    { font-size:1em; color:#000; font-weight:bold;}
+.comment ol li                    { padding:10px 5px;}
+.comment li ul li                 { padding:5px 0 5px 35px;  background:url("images/iconIndentArrow_local.gif") no-repeat 22px 10px;}
+
+.commentList .commentInfoWrap         { padding:0px 5px 10px 0; border-bottom:1px dashed #ccc; height:10px;}
+*html .commentList .commentInfoWrap{  padding:5px 5px 5px 0;}
+
+.commentList .commentInfo             { float:left; }
+.commentList .control                 { text-align:right;}
+
+
+
+.commentList .control a.modify        { background:url(images/iconModify.gif) no-repeat;  padding-left:68px;  padding-bottom:2px;  text-decoration:none;}
+.commentList .control a.modify span   { display:none;}
+.commentList .control a.write         { background:url(images/iconWrite.gif) no-repeat;  padding-left:48px;  padding-bottom:2px;  text-decoration:none;}
+.commentList .control a.write span    { display:none;}
+.commentList .control a.address       { background:url(images/iconAddress.gif) no-repeat;  padding-left:48px;  padding-bottom:2px;  text-decoration:none;}
+.commentList .control a.address span  { display:none;}
+
+
+
+.commentWrite                     { padding:5px; margin-top:10px;margin-bottom:-26px;  }
+.commentWrite input               { width:150px;}
+.commentWrite textarea            { width:570px;  padding:5px; position:relative; top:-16px;}
+.commentWrite .homepage           { width:300px;}
+.commentWrite .submit             { width:300px;  height:32px;  background-color:#333399;  font-size:1.1em; padding-top:0px; position:relative; top:-18px; color:#fff; margin:0 auto;display:block;}
+.commentWrite .secretWrap         { float:right; position:relative; top:-23px; left:-10px;}
+.commentWrite .checkbox           {	border:none; padding:0;	margin:0; width:25px;}
+
+.paging           { padding-top:10px;  text-align:center;  font-size:1.30em;font-weight:bold;}
+.paging .numbox   { border-left:1px solid #ccc; padding-left:6px; margin-left:6px;  font-weight:bold;}
+.paging .num      { border-right:1px solid #ccc; padding-right:8px; margin-right:5px;font-weight:bold;}
+
+
+/* ***** sidebar ***** */
+
+
+.sidebar .category {font-size:1.1em; background-color:#a5c5ff; padding:7px 0px 7px 7px; margin-bottom:6px;}
+.sidebar .tagbox,
+.sidebar .recentPost,
+.sidebar .recentComment,
+.sidebar .sidebartest,
+.sidebar .recentTrackback,
+.sidebar .archive,
+.sidebar .adTistory,
+.sidebar .botton               {background-color:#aaaaff; padding:7px; margin-bottom:6px;}
+.sidebar .tibyte              {background-color:#aaaaff; padding:7px; margin-bottom:6px; color:#000;}
+.sidebar .botton2              {background-color:#ffffff; padding:0px 0px 10px 10px; margin-top:-6px; margin-bottom:8px;  font:0.96em Verdana, Helvetica, Arial, Dotum, sans-serif;}
+.sidebar .googleAd             {padding:0px;margin-bottom:7px;}
+.sidebar .link                 {background-color:#aaaaff; padding:10px; margin-bottom:6px;}
+.sidebar .nei                  {padding:0px;margin-top:6px;margin-bottom:6px;}
+
+.sidebar ul                    { padding:0;  margin:0;  list-style:none;}
+.sidebar li                    { background:url(images/bul.png) 0 6px no-repeat;  padding-left:7px;}
+.sidebar h3                    { font:0.95em tahoma;  font-weight:bold; color:#333;  margin-bottom:5px;}
+.sidebar .cnt                  { font:0.85em Tahoma, Helvetica, Arial, Dotum, sans-serif;  color:#396f95;}
+.sidebar .date                 { font:0.85em Verdana, Helvetica, Arial, Dotum, sans-serif;  color:#555;}
+.sidebar .name                 { font:0.9em Dotum, Arial, sans-serif;  color:#555;}
+
+.sidebar .blogImage img        {background-color:#aaaaff; width:170px; padding-bottom:6px;  background-color:#fff;}
+.sidebar .blogDesc             {padding:5px;background-color:#aaaaff; color:#333333;  font-size:1.1em;  line-height:1.2em;  letter-spacing:0px; margin:0px 0px 6px 0px; }
+.sidebar .userID               {background-color:#aaaaff; color:#eeeeff;  background:url(images/iconBy.gif) 3px 0 no-repeat;  padding-left:22px;letter-spacing:-1px;}
+
+.sidebar .adminMenu            {padding:10px 0px;background-color:#aaaaff; margin:0px 0px 10px 0px; text-align:center;}
+
+
+.sidebar .notice               { margin:0;  padding:0;}
+.sidebar .notice li            { margin:0 0 2px 0; padding:0 0 1px 0; background:none;}
+.sidebar .notice a:link,
+.sidebar .notice a:visited     { background:url(images/iconNotice.gif) 0 0 no-repeat; padding:1px 0 5px 27px;}
+.sidebar .notice a:hover       { background:url(images/iconNotice_on.gif) 0 0 no-repeat;  padding:0 0 5px 27px; text-decoration:none; color:#f60;}
+
+
+
+.sidebar .category li          { background:none; font-weight:bold  }
+.sidebar .category li ul li    { background:url(images/bul3.gif) 0 5px no-repeat;  padding-left:7px; }
+.sidebar .category li ul li ul li { background:#a5c5ff;/* border-left:1px dotted #222299;*/ padding-left:0px; margin-left:2px; font-weight:normal;  }
+.sidebar .category li ul li ul li a{ color:#222299; }
+
+.sidebar .tagbox ul            { padding:5px 2px;	text-align:justify;}
+.sidebar .tagbox li            { background:none;  display:inline;}
+.sidebar .tagbox a             { letter-spacing:-1px;}	
+.sidebar .tagbox li .cloud1    {  font-weight:bold;  font-size:16px;  color:#396f95;}
+.sidebar .tagbox li .cloud2    {  font-weight:bold;  font-size:15px;  color:#333;}
+.sidebar .tagbox li .cloud3    {  font-weight:bold;  font-size:14px;  color:#666;}
+.sidebar .tagbox li .cloud4    {  font-size:13px;  color:#999;}
+.sidebar .tagbox li .cloud5    { font-size:12px;  color:#999;}	
+.sidebar .tagbox a:hover       { background-color:#eee;  text-decoration:none;  color:#000;}
+
+ 
+
+.sidebar .recentComments        { width:180px; overflow:hidden;}
+.sidebar .recentComment .info_wrap  {  margin-bottom:3px; color:#999; display:block;}
+.sidebar .recentTrackbacks      { width:180px; overflow:hidden;}
+.sidebar .recentTrackback .info_wrap  {  margin-bottom:3px; color:#999; display:block;}
+
+.sidebar .archive li           { font-family:verdana;}
+.sidebar .calendar td             { font-family:verdana;}
+ 
+.sidebar .calendar             { background:url(images/bg_calendar.gif) right top no-repeat #fff;  padding:10px; margin-bottom:6px;}
+.sidebar .counter              { background:url(images/bg_counter.gif) no-repeat #fff;  padding:0 10px; margin-bottom : 6px; text-align:right; font:0.85em/1.8em tahoma; font-weight:bold;}
+.sidebar .counter dl { padding:3px 0; margin:0;}
+.sidebar .counter dt { display:none;}
+.sidebar .counter .today { color:#f00;}
+
+
+.sidebar .botton          { text-align:center;  padding:5px;}
+.sidebar .adTistory       { text-align:center;}
+
+
+.admobile{
+display: none;
+}
+
+/* ***** footer ***** */
+#footer          { text-align:center;  padding:10px 10px 10px 10px;  font:11px Verdana, dotum;	color:#ffff00;}
+#footer a        { color:#eeee33;}
+#footer a:hover  { color:#eeee33;}
+
+
+
+#nesk {
+    float: right;
+    position: relative;
+    left: -50%;
+}
+
+#nesk li {
+    float: left;
+    position: relative;
+    left: 45%;
+   
+}
+​
